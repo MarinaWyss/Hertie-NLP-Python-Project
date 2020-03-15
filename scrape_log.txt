@@ -1,0 +1,25 @@
+15/03/2020 12:00:01
+number of entries in old breitbart data: 242
+total number of entries in new breitbart data: 242
+difference: 0
+number of entries in old fox data: 116
+total number of entries in new fox data: 117
+difference: 1
+number of entries in old wt data: 44
+total number of entries in new wt data: 46
+difference: 2
+number of entries in old ap data: 166
+total number of entries in new ap data: 166
+difference: 0
+number of entries in old nbc data: 67
+total number of entries in new nbc data: 68
+difference: 1
+number of entries in old nyt data: 92
+total number of entries in new nyt data: 92
+difference: 0
+number of entries in old politico data: 65
+total number of entries in new politico data: 65
+difference: 0
+number of entries in old buzzfeed data: 62
+total number of entries in new buzzfeed data: 62
+difference: 0
