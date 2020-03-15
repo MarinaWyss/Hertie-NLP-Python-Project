@@ -4,9 +4,14 @@
 import requests
 import re
 from bs4 import BeautifulSoup
+from datetime import datetime
 import numpy as np
 import pandas as pd
 
+timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+
+filepath = '/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/'
+print(timestamp, file=open(filepath + 'scrape_log.txt', 'a'))
 
 ### 1. Breitbart - Very Conservative -----------------------------------
 
@@ -73,19 +78,19 @@ breitbart_data = pd.DataFrame.from_dict({
 breitbart_data.head()
 
 # read in old data
-old_breitbart_data = pd.read_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/breitbart_data.csv')
+old_breitbart_data = pd.read_csv(filepath + 'data/breitbart_data.csv')
 num_breitbart_old = len(old_breitbart_data)
 
 # append new data
 breitbart_data = old_breitbart_data.append(breitbart_data).drop_duplicates()
 
 # save new .csv
-breitbart_data.to_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/breitbart_data.csv', index = False)
+breitbart_data.to_csv(filepath + 'data/breitbart_data.csv', index = False)
 num_breitbart_now = len(breitbart_data)
 
-print('number of entries in old breitbart data: {}'.format(num_breitbart_old))
-print('total number of entries in new breitbart data: {}'.format(num_breitbart_now))
-print('difference: {}'.format(num_breitbart_now-num_breitbart_old))
+print('number of entries in old breitbart data: {}'.format(num_breitbart_old), file=open(filepath + 'scrape_log.txt', 'a'))
+print('total number of entries in new breitbart data: {}'.format(num_breitbart_now), file=open(filepath + 'scrape_log.txt', 'a'))
+print('difference: {}'.format(num_breitbart_now-num_breitbart_old), file=open(filepath + 'scrape_log.txt', 'a'))
 
 
 ### 2. Fox - Conservative ----------------------------------------
@@ -173,19 +178,19 @@ fox_data = pd.DataFrame.from_dict({
 fox_data.head()
 
 # read in old data
-old_fox_data = pd.read_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/fox_data.csv')
+old_fox_data = pd.read_csv(filepath + 'data/fox_data.csv')
 num_fox_old = len(old_fox_data)
 
 # append new data
 fox_data = old_fox_data.append(fox_data).drop_duplicates()
 
 # save new .csv
-fox_data.to_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/fox_data.csv', index = False)
+fox_data.to_csv(filepath + 'data/fox_data.csv', index = False)
 num_fox_now = len(fox_data)
 
-print('number of entries in old fox data: {}'.format(num_fox_old))
-print('total number of entries in new fox data: {}'.format(num_fox_now))
-print('difference: {}'.format(num_fox_now-num_fox_old))
+print('number of entries in old fox data: {}'.format(num_fox_old), file=open(filepath + 'scrape_log.txt', 'a'))
+print('total number of entries in new fox data: {}'.format(num_fox_now), file=open(filepath + 'scrape_log.txt', 'a'))
+print('difference: {}'.format(num_fox_now-num_fox_old), file=open(filepath + 'scrape_log.txt', 'a'))
 
 
 ### 3. Washington Times - Center Right ------------------------------------
@@ -257,19 +262,19 @@ wt_data = pd.DataFrame.from_dict({
 wt_data.head()
 
 # read in old data
-old_wt_data = pd.read_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/wt_data.csv')
+old_wt_data = pd.read_csv(filepath + 'data/wt_data.csv')
 num_wt_old = len(old_wt_data)
 
 # append new data
 wt_data = old_wt_data.append(wt_data).drop_duplicates()
 
 # save new .csv
-wt_data.to_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/wt_data.csv', index = False)
+wt_data.to_csv(filepath + 'data/wt_data.csv', index = False)
 num_wt_now = len(wt_data)
 
-print('number of entries in old wt data: {}'.format(num_wt_old))
-print('total number of entries in new wt data: {}'.format(num_wt_now))
-print('difference: {}'.format(num_wt_now-num_wt_old))
+print('number of entries in old wt data: {}'.format(num_wt_old), file=open(filepath + 'scrape_log.txt', 'a'))
+print('total number of entries in new wt data: {}'.format(num_wt_now), file=open(filepath + 'scrape_log.txt', 'a'))
+print('difference: {}'.format(num_wt_now-num_wt_old), file=open(filepath + 'scrape_log.txt', 'a'))
 
 
 ### 4. Associated Press - Neutral --------------------------------
@@ -341,19 +346,19 @@ ap_data = pd.DataFrame.from_dict({
 ap_data.head()
 
 # read in old data
-old_ap_data = pd.read_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/ap_data.csv')
+old_ap_data = pd.read_csv(filepath + 'data/ap_data.csv')
 num_ap_old = len(old_ap_data)
 
 # append new data
 ap_data = old_ap_data.append(ap_data).drop_duplicates()
 
 # save new .csv
-ap_data.to_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/ap_data.csv', index = False)
+ap_data.to_csv(filepath + 'data/ap_data.csv', index = False)
 num_ap_now = len(ap_data)
 
-print('number of entries in old ap data: {}'.format(num_ap_old))
-print('total number of entries in new ap data: {}'.format(num_ap_now))
-print('difference: {}'.format(num_ap_now-num_ap_old))
+print('number of entries in old ap data: {}'.format(num_ap_old), file=open(filepath + 'scrape_log.txt', 'a'))
+print('total number of entries in new ap data: {}'.format(num_ap_now), file=open(filepath + 'scrape_log.txt', 'a'))
+print('difference: {}'.format(num_ap_now-num_ap_old), file=open(filepath + 'scrape_log.txt', 'a'))
 
 
 ### 5. NBC - Center-Left ----------------------------------------
@@ -418,19 +423,19 @@ nbc_data = nbc_data.dropna()
 nbc_data.head()
 
 # read in old data
-old_nbc_data = pd.read_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/nbc_data.csv')
+old_nbc_data = pd.read_csv(filepath + 'data/nbc_data.csv')
 num_nbc_old = len(old_nbc_data)
 
 # append new data
 nbc_data = old_nbc_data.append(nbc_data).drop_duplicates()
 
 # save new .csv
-nbc_data.to_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/nbc_data.csv', index = False)
+nbc_data.to_csv(filepath + 'data/nbc_data.csv', index = False)
 num_nbc_now = len(nbc_data)
 
-print('number of entries in old nbc data: {}'.format(num_nbc_old))
-print('total number of entries in new nbc data: {}'.format(num_nbc_now))
-print('difference: {}'.format(num_nbc_now-num_nbc_old))
+print('number of entries in old nbc data: {}'.format(num_nbc_old), file=open(filepath + 'scrape_log.txt', 'a'))
+print('total number of entries in new nbc data: {}'.format(num_nbc_now), file=open(filepath + 'scrape_log.txt', 'a'))
+print('difference: {}'.format(num_nbc_now-num_nbc_old), file=open(filepath + 'scrape_log.txt', 'a'))
 
 
 ### 6. New York Times - Liberal ---------------------------------------
@@ -528,19 +533,19 @@ nyt_data = pd.DataFrame.from_dict({
 nyt_data.head()
 
 # read in old data
-old_nyt_data = pd.read_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/nyt_data.csv')
+old_nyt_data = pd.read_csv(filepath + 'data/nyt_data.csv')
 num_nyt_old = len(old_nyt_data)
 
 # append new data
 nyt_data = old_nyt_data.append(nyt_data).drop_duplicates()
 
 # save new .csv
-nyt_data.to_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/nyt_data.csv', index = False)
+nyt_data.to_csv(filepath + 'data/nyt_data.csv', index = False)
 num_nyt_now = len(nyt_data)
 
-print('number of entries in old nyt data: {}'.format(num_nyt_old))
-print('total number of entries in new nyt data: {}'.format(num_nyt_now))
-print('difference: {}'.format(num_nyt_now-num_nyt_old))
+print('number of entries in old nyt data: {}'.format(num_nyt_old), file=open(filepath + 'scrape_log.txt', 'a'))
+print('total number of entries in new nyt data: {}'.format(num_nyt_now), file=open(filepath + 'scrape_log.txt', 'a'))
+print('difference: {}'.format(num_nyt_now-num_nyt_old), file=open(filepath + 'scrape_log.txt', 'a'))
 
 
 ### 7. Politico - Liberal ------------------------------------------
@@ -602,19 +607,19 @@ politico_data = politico_data.dropna()
 politico_data.head()
 
 # read in old data
-old_politico_data = pd.read_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/politico_data.csv')
+old_politico_data = pd.read_csv(filepath + 'data/politico_data.csv')
 num_politico_old = len(old_politico_data)
 
 # append new data
 politico_data = old_politico_data.append(politico_data).drop_duplicates()
 
 # save new .csv
-politico_data.to_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/politico_data.csv', index = False)
+politico_data.to_csv(filepath + 'data/politico_data.csv', index = False)
 num_politico_now = len(politico_data)
 
-print('number of entries in old politico data: {}'.format(num_politico_old))
-print('total number of entries in new politico data: {}'.format(num_politico_now))
-print('difference: {}'.format(num_politico_now-num_politico_old))
+print('number of entries in old politico data: {}'.format(num_politico_old), file=open(filepath + 'scrape_log.txt', 'a'))
+print('total number of entries in new politico data: {}'.format(num_politico_now), file=open(filepath + 'scrape_log.txt', 'a'))
+print('difference: {}'.format(num_politico_now-num_politico_old), file=open(filepath + 'scrape_log.txt', 'a'))
 
 
 ### 8. Buzzfeed - Very Liberal ----------------------------------------------
@@ -674,17 +679,17 @@ buzz_data = pd.DataFrame.from_dict({
 buzz_data.head()
 
 # read in old data
-old_buzz_data = pd.read_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/buzzfeed_data.csv')
+old_buzz_data = pd.read_csv(filepath + 'data/buzzfeed_data.csv')
 num_buzz_old = len(old_buzz_data)
 
 # append new data
 buzz_data = old_buzz_data.append(buzz_data).drop_duplicates()
 
 # save new .csv
-buzz_data.to_csv('/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/data/buzzfeed_data.csv', index = False)
+buzz_data.to_csv(filepath + 'data/buzzfeed_data.csv', index = False)
 num_buzz_now = len(buzz_data)
 
-print('number of entries in old buzzfeed data: {}'.format(num_buzz_old))
-print('total number of entries in new buzzfeed data: {}'.format(num_buzz_now))
-print('difference: {}'.format(num_buzz_now-num_buzz_old))
+print('number of entries in old buzzfeed data: {}'.format(num_buzz_old), file=open(filepath + 'scrape_log.txt', 'a'))
+print('total number of entries in new buzzfeed data: {}'.format(num_buzz_now), file=open(filepath + 'scrape_log.txt', 'a'))
+print('difference: {}'.format(num_buzz_now-num_buzz_old), file=open(filepath + 'scrape_log.txt', 'a'))
 
