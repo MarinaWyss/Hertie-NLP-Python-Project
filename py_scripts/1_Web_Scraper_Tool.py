@@ -477,6 +477,9 @@ for n in np.arange(0, len(nyt_tags_home)):
     nyt_dates.append(date)
     
     # get article content
+    for div in soup_article.find_all("div", {'class': 'css-9tf9ac'}):
+        div.decompose()
+
     body = soup_article.find_all('div', {'class':['css-53u6y8', 'css-1fanzo5']})
     final_article = " ".join([item.text for item in body])
         
@@ -505,6 +508,9 @@ for n in np.arange(0, len(nyt_tags_archive)):
     nyt_dates.append(date)
         
     # get article content
+    for div in soup_article.find_all("div", {'class': 'css-9tf9ac'}):
+        div.decompose()
+
     body = soup_article.find_all('div', attrs = {'class':['css-53u6y8', 'css-1fanzo5 StoryBodyCompanionColumn']})
     final_article = " ".join([item.text for item in body])
         
