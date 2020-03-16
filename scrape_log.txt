@@ -139,3 +139,19 @@ difference: 23
 number of entries in old nbc data: 92
 total number of entries in new nbc data: 108
 difference: 16
+16/03/2020 17:00:01
+number of entries in old breitbart data: 290
+total number of entries in new breitbart data: 296
+difference: 6
+number of entries in old fox data: 136
+total number of entries in new fox data: 138
+difference: 2
+number of entries in old wt data: 94
+total number of entries in new wt data: 95
+difference: 1
+number of entries in old ap data: 193
+total number of entries in new ap data: 196
+difference: 3
+number of entries in old nbc data: 108
+total number of entries in new nbc data: 112
+difference: 4
