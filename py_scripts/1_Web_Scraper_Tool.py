@@ -117,6 +117,7 @@ for n in np.arange(0, len(fox_tags)):
     link = "https://foxnews.com" + link
     fox_links.append(link)
     fox_links = [x for x in fox_links if "/v/" not in x]
+    fox_links = [x for x in fox_links if "https://foxnews.comhttps://www.foxnews.com" not in x]
 
 # prep for article content
 for link in fox_links:
@@ -451,7 +452,7 @@ nyt_soup = BeautifulSoup(nyt_homepage, 'html.parser')
 nyt_tags_home = nyt_soup.find_all('h2', class_='css-l2vidh e4e4i5l1')
 
 # archive URLs
-nyt_tags_archive = nyt_soup.find_all('div', class_='css-1l4spti')
+# nyt_tags_archive = nyt_soup.find_all('div', class_='css-1l4spti') gone from site as of 19/03/3030
 
 # setup for both
 nyt_links = []
@@ -491,35 +492,35 @@ for n in np.arange(0, len(nyt_tags_home)):
     nyt_contents.append(final_article)
 
 # archive articles
-for n in np.arange(0, len(nyt_tags_archive)):
+#for n in np.arange(0, len(nyt_tags_archive)):
 
     # get article link
-    link = nyt_tags_archive[n].find('a')['href']
-    link = "https://www.nytimes.com" + link
-    nyt_links.append(link)
+#    link = nyt_tags_archive[n].find('a')['href']
+#    link = "https://www.nytimes.com" + link
+#    nyt_links.append(link)
     
     # get article title
-    title = nyt_tags_archive[n].find('a').get_text()
-    nyt_titles.append(title)
+#    title = nyt_tags_archive[n].find('a').get_text()
+#    nyt_titles.append(title)
     
     # prep article content
-    article = requests.get(link)
-    article_content = article.content
-    soup_article = BeautifulSoup(article_content, 'html5lib')
+#    article = requests.get(link)
+#    article_content = article.content
+#    soup_article = BeautifulSoup(article_content, 'html5lib')
     
     # get publication datetime
-    date = soup_article.time.attrs['datetime']
-    date = date[:-15]
-    nyt_dates.append(date)
+#    date = soup_article.time.attrs['datetime']
+#    date = date[:-15]
+#    nyt_dates.append(date)
         
     # get article content
-    for div in soup_article.find_all("div", {'class': 'css-9tf9ac'}):
-        div.decompose()
+#    for div in soup_article.find_all("div", {'class': 'css-9tf9ac'}):
+#        div.decompose()
 
-    body = soup_article.find_all('div', attrs = {'class':['css-53u6y8', 'css-1fanzo5 StoryBodyCompanionColumn']})
-    final_article = " ".join([item.text for item in body])
+#    body = soup_article.find_all('div', attrs = {'class':['css-53u6y8', 'css-1fanzo5 StoryBodyCompanionColumn']})
+#    final_article = " ".join([item.text for item in body])
         
-    nyt_contents.append(final_article)
+#    nyt_contents.append(final_article)
 
 # assembling data
 nyt_data = pd.DataFrame.from_dict({
