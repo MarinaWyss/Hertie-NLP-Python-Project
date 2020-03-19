@@ -650,3 +650,22 @@ difference: 29
 number of entries in old nyt data: 134
 total number of entries in new nyt data: 134
 difference: 0
+19/03/2020 17:00:01
+number of entries in old breitbart data: 527
+total number of entries in new breitbart data: 547
+difference: 20
+number of entries in old fox data: 250
+total number of entries in new fox data: 255
+difference: 5
+number of entries in old wt data: 245
+total number of entries in new wt data: 251
+difference: 6
+number of entries in old ap data: 343
+total number of entries in new ap data: 347
+difference: 4
+number of entries in old nbc data: 239
+total number of entries in new nbc data: 245
+difference: 6
+number of entries in old nyt data: 134
+total number of entries in new nyt data: 134
+difference: 0
