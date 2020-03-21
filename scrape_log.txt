@@ -807,3 +807,363 @@ difference: 1
 number of entries in old fox data: 284
 total number of entries in new fox data: 286
 difference: 2
+20/03/2020 12:00:01
+number of entries in old breitbart data: 597
+total number of entries in new breitbart data: 600
+difference: 3
+number of entries in old fox data: 286
+total number of entries in new fox data: 289
+difference: 3
+number of entries in old wt data: 284
+total number of entries in new wt data: 289
+difference: 5
+number of entries in old ap data: 383
+total number of entries in new ap data: 386
+difference: 3
+number of entries in old nbc data: 273
+total number of entries in new nbc data: 283
+difference: 10
+number of entries in old nyt data: 138
+total number of entries in new nyt data: 138
+difference: 0
+number of entries in old politico data: 331
+total number of entries in new politico data: 333
+difference: 2
+number of entries in old buzzfeed data: 93
+total number of entries in new buzzfeed data: 93
+difference: 0
+20/03/2020 13:00:05
+number of entries in old breitbart data: 600
+total number of entries in new breitbart data: 603
+difference: 3
+number of entries in old fox data: 289
+total number of entries in new fox data: 289
+difference: 0
+number of entries in old wt data: 289
+total number of entries in new wt data: 289
+difference: 0
+number of entries in old ap data: 386
+total number of entries in new ap data: 387
+difference: 1
+number of entries in old nbc data: 283
+total number of entries in new nbc data: 286
+difference: 3
+number of entries in old nyt data: 138
+total number of entries in new nyt data: 138
+difference: 0
+number of entries in old politico data: 333
+total number of entries in new politico data: 338
+difference: 5
+number of entries in old buzzfeed data: 93
+total number of entries in new buzzfeed data: 93
+difference: 0
+20/03/2020 14:00:02
+number of entries in old breitbart data: 603
+total number of entries in new breitbart data: 607
+difference: 4
+number of entries in old fox data: 289
+total number of entries in new fox data: 291
+difference: 2
+number of entries in old wt data: 289
+total number of entries in new wt data: 292
+difference: 3
+number of entries in old ap data: 387
+total number of entries in new ap data: 389
+difference: 2
+number of entries in old nbc data: 286
+total number of entries in new nbc data: 293
+difference: 7
+number of entries in old nyt data: 138
+total number of entries in new nyt data: 138
+difference: 0
+number of entries in old politico data: 338
+total number of entries in new politico data: 351
+difference: 13
+number of entries in old buzzfeed data: 93
+total number of entries in new buzzfeed data: 94
+difference: 1
+20/03/2020 15:00:05
+number of entries in old breitbart data: 607
+total number of entries in new breitbart data: 612
+difference: 5
+number of entries in old fox data: 291
+total number of entries in new fox data: 296
+difference: 5
+number of entries in old wt data: 292
+total number of entries in new wt data: 294
+difference: 2
+number of entries in old ap data: 389
+total number of entries in new ap data: 392
+difference: 3
+number of entries in old nbc data: 293
+total number of entries in new nbc data: 298
+difference: 5
+number of entries in old nyt data: 138
+total number of entries in new nyt data: 140
+difference: 2
+number of entries in old politico data: 351
+total number of entries in new politico data: 370
+difference: 19
+number of entries in old buzzfeed data: 94
+total number of entries in new buzzfeed data: 94
+difference: 0
+20/03/2020 17:00:01
+number of entries in old breitbart data: 612
+total number of entries in new breitbart data: 625
+difference: 13
+number of entries in old fox data: 296
+total number of entries in new fox data: 303
+difference: 7
+number of entries in old wt data: 294
+total number of entries in new wt data: 298
+difference: 4
+number of entries in old ap data: 392
+total number of entries in new ap data: 399
+difference: 7
+number of entries in old nbc data: 298
+total number of entries in new nbc data: 303
+difference: 5
+number of entries in old nyt data: 140
+total number of entries in new nyt data: 141
+difference: 1
+20/03/2020 18:00:02
+number of entries in old breitbart data: 625
+total number of entries in new breitbart data: 632
+difference: 7
+number of entries in old fox data: 303
+total number of entries in new fox data: 309
+difference: 6
+number of entries in old wt data: 298
+total number of entries in new wt data: 302
+difference: 4
+number of entries in old ap data: 399
+total number of entries in new ap data: 407
+difference: 8
+number of entries in old nbc data: 303
+total number of entries in new nbc data: 312
+difference: 9
+number of entries in old nyt data: 141
+total number of entries in new nyt data: 141
+difference: 0
+number of entries in old politico data: 370
+total number of entries in new politico data: 399
+difference: 29
+number of entries in old buzzfeed data: 94
+total number of entries in new buzzfeed data: 96
+difference: 2
+20/03/2020 19:00:01
+number of entries in old breitbart data: 632
+total number of entries in new breitbart data: 642
+difference: 10
+number of entries in old fox data: 309
+total number of entries in new fox data: 313
+difference: 4
+number of entries in old wt data: 302
+total number of entries in new wt data: 307
+difference: 5
+number of entries in old ap data: 407
+total number of entries in new ap data: 411
+difference: 4
+number of entries in old nbc data: 312
+total number of entries in new nbc data: 319
+difference: 7
+number of entries in old nyt data: 141
+total number of entries in new nyt data: 141
+difference: 0
+20/03/2020 21:00:01
+number of entries in old breitbart data: 642
+total number of entries in new breitbart data: 655
+difference: 13
+number of entries in old fox data: 313
+total number of entries in new fox data: 318
+difference: 5
+number of entries in old wt data: 307
+total number of entries in new wt data: 313
+difference: 6
+number of entries in old ap data: 411
+total number of entries in new ap data: 419
+difference: 8
+number of entries in old nbc data: 319
+total number of entries in new nbc data: 327
+difference: 8
+number of entries in old nyt data: 141
+total number of entries in new nyt data: 141
+difference: 0
+number of entries in old politico data: 399
+total number of entries in new politico data: 416
+difference: 17
+number of entries in old buzzfeed data: 96
+total number of entries in new buzzfeed data: 99
+difference: 3
+21/03/2020 08:00:01
+number of entries in old breitbart data: 655
+total number of entries in new breitbart data: 685
+difference: 30
+number of entries in old fox data: 318
+total number of entries in new fox data: 324
+difference: 6
+number of entries in old wt data: 313
+total number of entries in new wt data: 320
+difference: 7
+number of entries in old ap data: 419
+total number of entries in new ap data: 434
+difference: 15
+number of entries in old nbc data: 327
+total number of entries in new nbc data: 340
+difference: 13
+number of entries in old nyt data: 141
+total number of entries in new nyt data: 145
+difference: 4
+number of entries in old politico data: 416
+total number of entries in new politico data: 428
+difference: 12
+number of entries in old buzzfeed data: 99
+total number of entries in new buzzfeed data: 102
+difference: 3
+21/03/2020 09:00:01
+number of entries in old breitbart data: 685
+total number of entries in new breitbart data: 685
+difference: 0
+number of entries in old fox data: 324
+total number of entries in new fox data: 324
+difference: 0
+number of entries in old wt data: 320
+total number of entries in new wt data: 320
+difference: 0
+number of entries in old ap data: 434
+total number of entries in new ap data: 434
+difference: 0
+number of entries in old nbc data: 340
+total number of entries in new nbc data: 346
+difference: 6
+number of entries in old nyt data: 145
+total number of entries in new nyt data: 145
+difference: 0
+number of entries in old politico data: 428
+total number of entries in new politico data: 429
+difference: 1
+21/03/2020 11:00:02
+number of entries in old breitbart data: 685
+total number of entries in new breitbart data: 688
+difference: 3
+number of entries in old fox data: 324
+total number of entries in new fox data: 324
+difference: 0
+number of entries in old wt data: 320
+total number of entries in new wt data: 320
+difference: 0
+number of entries in old ap data: 434
+total number of entries in new ap data: 434
+difference: 0
+number of entries in old nbc data: 346
+total number of entries in new nbc data: 350
+difference: 4
+number of entries in old nyt data: 145
+total number of entries in new nyt data: 145
+difference: 0
+number of entries in old politico data: 429
+total number of entries in new politico data: 429
+difference: 0
+number of entries in old buzzfeed data: 102
+total number of entries in new buzzfeed data: 102
+difference: 0
+21/03/2020 13:00:02
+number of entries in old breitbart data: 688
+total number of entries in new breitbart data: 688
+difference: 0
+number of entries in old fox data: 324
+total number of entries in new fox data: 324
+difference: 0
+number of entries in old wt data: 320
+total number of entries in new wt data: 320
+difference: 0
+number of entries in old ap data: 434
+total number of entries in new ap data: 435
+difference: 1
+number of entries in old nbc data: 350
+total number of entries in new nbc data: 354
+difference: 4
+number of entries in old nyt data: 145
+total number of entries in new nyt data: 145
+difference: 0
+number of entries in old politico data: 429
+total number of entries in new politico data: 429
+difference: 0
+number of entries in old buzzfeed data: 102
+total number of entries in new buzzfeed data: 102
+difference: 0
+21/03/2020 14:00:02
+number of entries in old breitbart data: 688
+total number of entries in new breitbart data: 688
+difference: 0
+number of entries in old fox data: 324
+total number of entries in new fox data: 324
+difference: 0
+number of entries in old wt data: 320
+total number of entries in new wt data: 320
+difference: 0
+number of entries in old ap data: 435
+total number of entries in new ap data: 437
+difference: 2
+number of entries in old nbc data: 354
+total number of entries in new nbc data: 358
+difference: 4
+number of entries in old nyt data: 145
+total number of entries in new nyt data: 145
+difference: 0
+number of entries in old politico data: 429
+total number of entries in new politico data: 430
+difference: 1
+number of entries in old buzzfeed data: 102
+total number of entries in new buzzfeed data: 102
+difference: 0
+21/03/2020 15:00:01
+number of entries in old breitbart data: 688
+total number of entries in new breitbart data: 688
+difference: 0
+number of entries in old fox data: 324
+total number of entries in new fox data: 324
+difference: 0
+number of entries in old wt data: 320
+total number of entries in new wt data: 320
+difference: 0
+number of entries in old ap data: 437
+total number of entries in new ap data: 437
+difference: 0
+number of entries in old nbc data: 358
+total number of entries in new nbc data: 363
+difference: 5
+number of entries in old nyt data: 145
+total number of entries in new nyt data: 145
+difference: 0
+number of entries in old politico data: 430
+total number of entries in new politico data: 432
+difference: 2
+number of entries in old buzzfeed data: 102
+total number of entries in new buzzfeed data: 102
+difference: 0
+21/03/2020 16:00:01
+number of entries in old breitbart data: 688
+total number of entries in new breitbart data: 691
+difference: 3
+number of entries in old fox data: 324
+total number of entries in new fox data: 325
+difference: 1
+number of entries in old wt data: 320
+total number of entries in new wt data: 322
+difference: 2
+number of entries in old ap data: 437
+total number of entries in new ap data: 439
+difference: 2
+number of entries in old nbc data: 363
+total number of entries in new nbc data: 366
+difference: 3
+number of entries in old nyt data: 145
+total number of entries in new nyt data: 146
+difference: 1
+number of entries in old politico data: 432
+total number of entries in new politico data: 436
+difference: 4
+number of entries in old buzzfeed data: 102
+total number of entries in new buzzfeed data: 103
+difference: 1
