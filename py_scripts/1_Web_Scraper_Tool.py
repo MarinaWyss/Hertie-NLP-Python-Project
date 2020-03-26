@@ -288,7 +288,7 @@ ap_homepage = ap_requests.content
 ap_soup = BeautifulSoup(ap_homepage, 'html.parser')
 
 # locate articles
-ap_tags = ap_soup.find_all('a', class_='Component-headline-0-2-105')
+ap_tags = ap_soup.find_all('a', class_='Component-headline-0-2-106')
 
 # get homepage article links
 ap_links = []
@@ -492,15 +492,15 @@ for n in np.arange(0, len(nyt_tags_home)):
     nyt_contents.append(final_article)
 
 # archive articles
-#for n in np.arange(0, len(nyt_tags_archive)):
+for n in np.arange(0, len(nyt_tags_archive)):
 
     # get article link
-#    link = nyt_tags_archive[n].find('a')['href']
-#    link = "https://www.nytimes.com" + link
-#    nyt_links.append(link)
-    
+    link = nyt_tags_archive[n].find('a')['href']
+    link = "https://www.nytimes.com" + link
+    nyt_links.append(link)
+
     # get article title
-#    title = nyt_tags_archive[n].find('a').get_text()
+    title = nyt_tags_archive[n].find('a').get_text()
 #    nyt_titles.append(title)
     
     # prep article content
