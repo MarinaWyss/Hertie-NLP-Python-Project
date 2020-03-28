@@ -492,15 +492,15 @@ for n in np.arange(0, len(nyt_tags_home)):
     nyt_contents.append(final_article)
 
 # archive articles
-for n in np.arange(0, len(nyt_tags_archive)):
+#for n in np.arange(0, len(nyt_tags_archive)):
 
     # get article link
-    link = nyt_tags_archive[n].find('a')['href']
-    link = "https://www.nytimes.com" + link
-    nyt_links.append(link)
+#    link = nyt_tags_archive[n].find('a')['href']
+#    link = "https://www.nytimes.com" + link
+#    nyt_links.append(link)
 
     # get article title
-    title = nyt_tags_archive[n].find('a').get_text()
+#    title = nyt_tags_archive[n].find('a').get_text()
 #    nyt_titles.append(title)
     
     # prep article content

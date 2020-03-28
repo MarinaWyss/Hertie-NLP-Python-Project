@@ -14,8 +14,8 @@
       <file leaf-file-name="1_Web_Scraper_Tool.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-948">
-              <caret line="454" column="2" lean-forward="true" selection-start-line="454" selection-start-column="2" selection-end-line="454" selection-end-column="2" />
+            <state relative-caret-position="134">
+              <caret line="628" column="12" lean-forward="true" selection-start-line="628" selection-start-column="12" selection-end-line="628" selection-end-column="12" />
               <folding>
                 <element signature="e#79#94#0" expanded="true" />
               </folding>
@@ -63,7 +63,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,6 +79,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,12 +243,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#79#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../1_Web_Scraper_Tool.py" />
     <entry file="file://$PROJECT_DIR$/../../../../1_Web_Scraper_Tool.py" />
     <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-948">
-          <caret line="454" column="2" lean-forward="true" selection-start-line="454" selection-start-column="2" selection-end-line="454" selection-end-column="2" />
+        <state relative-caret-position="134">
+          <caret line="628" column="12" lean-forward="true" selection-start-line="628" selection-start-column="12" selection-end-line="628" selection-end-column="12" />
           <folding>
             <element signature="e#79#94#0" expanded="true" />
           </folding>
