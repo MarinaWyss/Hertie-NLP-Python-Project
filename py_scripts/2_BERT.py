@@ -20,7 +20,8 @@ class Bert:
         self._bert_model = None
 
     def data(self):
-        data = pd.read_csv(filepath + '/sentence_data.csv')[['article_text']]
+        data = pd.read_csv(filepath + '/sentence_data.csv')
+        data = data.loc[data['candidates_mentioned'] == 1][['article_text']]
 
         # add labels
         data['label'] = data['article_text'].str.extract('({})'.format('|'.join(self.candidates)),
