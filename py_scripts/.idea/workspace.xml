@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fcb14a2-be1a-4f43-855c-c5a606e2d20b" name="Default" comment="" />
+    <list default="true" id="6fcb14a2-be1a-4f43-855c-c5a606e2d20b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/1_Web_Scraper_Tool-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/1_Web_Scraper_Tool-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../data/ap_data.csv" afterPath="$PROJECT_DIR$/../data/ap_data.csv" />
+      <change beforePath="$PROJECT_DIR$/../data/breitbart_data.csv" afterPath="$PROJECT_DIR$/../data/breitbart_data.csv" />
+      <change beforePath="$PROJECT_DIR$/../data/buzzfeed_data.csv" afterPath="$PROJECT_DIR$/../data/buzzfeed_data.csv" />
+      <change beforePath="$PROJECT_DIR$/../data/fox_data.csv" afterPath="$PROJECT_DIR$/../data/fox_data.csv" />
+      <change beforePath="$PROJECT_DIR$/../data/nbc_data.csv" afterPath="$PROJECT_DIR$/../data/nbc_data.csv" />
+      <change beforePath="$PROJECT_DIR$/../data/nyt_data.csv" afterPath="$PROJECT_DIR$/../data/nyt_data.csv" />
+      <change beforePath="$PROJECT_DIR$/../data/politico_data.csv" afterPath="$PROJECT_DIR$/../data/politico_data.csv" />
+      <change beforePath="$PROJECT_DIR$/../data/wt_data.csv" afterPath="$PROJECT_DIR$/../data/wt_data.csv" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../scrape_log.txt" afterPath="$PROJECT_DIR$/../scrape_log.txt" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,13 +23,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1_Web_Scraper_Tool.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1_Web_Scraper_Tool.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="134">
-              <caret line="628" column="12" lean-forward="true" selection-start-line="628" selection-start-column="12" selection-end-line="628" selection-end-column="12" />
+              <caret line="628" column="12" lean-forward="false" selection-start-line="628" selection-start-column="12" selection-end-line="628" selection-end-column="12" />
               <folding>
                 <element signature="e#79#94#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2_BERT.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2_BERT.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="94" column="0" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,6 +56,9 @@
       <find>get article titles, content</find>
       <find>nbc</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -62,7 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,6 +106,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -130,7 +157,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35454544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3242424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -253,14 +280,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#79#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../1_Web_Scraper_Tool.py" />
     <entry file="file://$PROJECT_DIR$/../../../../1_Web_Scraper_Tool.py" />
     <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
-          <caret line="628" column="12" lean-forward="true" selection-start-line="628" selection-start-column="12" selection-end-line="628" selection-end-column="12" />
+          <caret line="628" column="12" lean-forward="false" selection-start-line="628" selection-start-column="12" selection-end-line="628" selection-end-column="12" />
           <folding>
             <element signature="e#79#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_BERT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
