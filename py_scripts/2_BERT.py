@@ -39,6 +39,8 @@ class Bert:
         data['article_text'] = data['article_text'].str.replace('Joe', '[candidate]')
         data['article_text'] = data['article_text'].str.replace('Biden', '[candidate]')
 
+	data = data.drop_duplicates()
+
         self._data = data
 
         return self._data
