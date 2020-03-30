@@ -563,25 +563,28 @@ politico_tags = politico_soup.find_all('h3')
 
 # get article titles, content, dates, and links
 politico_links = []
+
+for n in np.arange(0, len(politico_tags)):
+    # get article link
+    link = politico_tags[n].find('a')['href']
+    if "/news/" in link:
+        politico_links.append(link)
+
 politico_titles = []
 politico_dates = []
 politico_contents = []
 
-for n in np.arange(0, len(politico_tags)):
-
-    # get article link
-    link = politico_tags[n].find('a')['href']
-    politico_links.append(link)
-    
-    # get article title
-    title = politico_tags[n].find('a').get_text()
-    politico_titles.append(title)
+for link in politico_links:
     
     # prep article content
     article = requests.get(link)
     article_content = article.content
     soup_article = BeautifulSoup(article_content, 'html5lib')
-    
+
+    # get article title
+    title = soup_article.find('h2', attrs={'class':'headline'}).get_text()
+    politico_titles.append(title)
+
     # get publication datetime
     date = soup_article.time.attrs['datetime']
     date = date[:-9]
@@ -601,9 +604,6 @@ politico_data = pd.DataFrame.from_dict({
     'article_title': politico_titles,
     'article_text': politico_contents 
 })
-
-# dropping rows that are not text articles (these will have NA in text)
-politico_data = politico_data.dropna()
 
 politico_data.head()
 
