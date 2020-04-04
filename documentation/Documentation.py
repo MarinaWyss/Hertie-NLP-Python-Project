@@ -19,7 +19,7 @@ import warnings
 warnings.simplefilter(action='ignore')
 
 
-# In[7]:
+# In[4]:
 
 
 class WebScraper:
@@ -155,7 +155,7 @@ class WebScraper:
         
         return breitbart_data
     
-    def save_Breitbart:
+    def save_Breitbart():
         """
         Appends new Breitbart data the the old Breitbart data and saves entire df as a .csv file.
         """
@@ -170,13 +170,12 @@ class WebScraper:
         breitbart_data.to_csv("data/breitbart_data.csv", index = False)
         num_now = len(breitbart_data)
 
-    def check_Breitbart:
+    def check_Breitbart():
         """
         Prints number of entries in old Breitbart data and total number of entries in new Breitbart data.
         """
         print("number of entries in old data: {}".format(num_old))
         print("total number of entries in new data: {}".format(num_now))
-
     
     def get_FoxNews():
         """
@@ -262,7 +261,7 @@ class WebScraper:
             
             return fox_data
 
-    def save_Fox:
+    def save_Fox():
         """
         Appends new Fox data the the old Fox data and saves entire df as a .csv file.
         """
@@ -277,7 +276,7 @@ class WebScraper:
         fox_data.to_csv("data/fox_data.csv", index = False)
         num_now = len(fox_data)
         
-    def check_Fox:
+    def check_Fox():
         """
         Prints number of entries in old Fox data and total number of entries in new Fox data.
         """
@@ -356,7 +355,7 @@ class WebScraper:
         
         return wt_data
     
-    def save_WashingtonTimes:
+    def save_WashingtonTimes():
         """
         Appends new Washington Times data the the old Washington Times data and saves entire df as a .csv file.        
         """
@@ -371,7 +370,7 @@ class WebScraper:
         wt_data.to_csv("data/wt_data.csv", index = False)
         num_now = len(wt_data)
 
-    def check_WashingtonTimes:
+    def check_WashingtonTimes():
         """
         Returns number of entries in old Washington Times data and total number of entries in new Washington Times data.
         """
@@ -451,7 +450,7 @@ class WebScraper:
         
         return ap_data
         
-    def save_AP:
+    def save_AP():
         """
         Appends new AP data the the old AP data and saves entire df as a .csv file.
         """
@@ -466,7 +465,7 @@ class WebScraper:
         ap_data.to_csv("data/ap_data.csv", index = False)
         num_now = len(ap_data)
     
-    def check_AP:
+    def check_AP():
         """
         Prints number of entries in old AP data and total number of entries in new AP data.
         """
@@ -542,7 +541,7 @@ class WebScraper:
 
         return nbc_data
         
-    def save_NBC:
+    def save_NBC():
         """
         Appends new NBC data the the old NBC data and saves entire df as a .csv file.
         """
@@ -557,7 +556,7 @@ class WebScraper:
         nbc_data.to_csv("data/nbc_data.csv", index = False)
         num_now = len(nbc_data)
     
-    def check_NBC:
+    def check_NBC():
         """
         Prints number of entries in old NBC data and total number of entries in new NBC data.
         """
@@ -657,7 +656,7 @@ class WebScraper:
 
         return nyt_data
     
-    def save_NYT:
+    def save_NYT():
         """
         Appends new NYT data the the old NYT data and saves entire df as a .csv file.
         """
@@ -672,7 +671,7 @@ class WebScraper:
         nyt_data.to_csv("data/nyt_data.csv", index = False)
         num_now = len(nyt_data)
     
-    def check_NYT:
+    def check_NYT():
         """
         Prints number of entries in old NYT data and total number of entries in new NYT data.
         """
@@ -744,7 +743,7 @@ class WebScraper:
 
         return politico_data
         
-    def save_Politico:
+    def save_Politico():
         """
         Appends new Politico data the the old Politico data and saves entire df as a .csv file.
         """
@@ -759,7 +758,7 @@ class WebScraper:
         politico_data.to_csv("data/politico_data.csv", index = False)
         num_now = len(politico_data)
     
-    def check_Politico:
+    def check_Politico():
         """
         Prints number of entries in old Politico data and total number of entries in new Politico data.
         """
@@ -829,7 +828,7 @@ class WebScraper:
 
         return buzz_data
         
-    def save_Buzzfeed:
+    def save_Buzzfeed():
         """
         Appends new Buzzfeed data the the old Buzzfeed data and saves entire df as a .csv file. 
         """
@@ -844,21 +843,12 @@ class WebScraper:
         buzz_data.to_csv("data/buzzfeed_data.csv", index = False)
         num_now = len(buzz_data)
     
-    def check_Buzzfeed:
+    def check_Buzzfeed():
         """
         Prints number of entries in old Buzzfeed data and total number of entries in new Buzzfeed data.
         """
         print("number of entries in old data: {}".format(num_old))
         print("total number of entries in new data: {}".format(num_now))
-
-
-# In[12]:
-
-
-#example
-#new_buzz_data = WebScraper.get_Buzzfeed()
-#save_buzz_data = WebScraper.save_Buzzfeed()
-#save_buzz_data = WebScraper.check_Buzzfeed()
 
 
 # In[ ]:
