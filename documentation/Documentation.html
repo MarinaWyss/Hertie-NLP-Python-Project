@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Documentation</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/madelinebrady/Documents/GitHub/Hertie-NLP-Python-Project/documentation/Documentation.py">/Users/madelinebrady/Documents/GitHub/Hertie-NLP-Python-Project/documentation/Documentation.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;coding:&nbsp;utf-8</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+<a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+<a href="requests.html">requests</a><br>
+</td><td width="25%" valign=top><a href="warnings.html">warnings</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Documentation.html#DataPrep">DataPrep</a>
+</font></dt><dt><font face="helvetica, arial"><a href="Documentation.html#WebScraper">WebScraper</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DataPrep">class <strong>DataPrep</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Returns&nbsp;a&nbsp;merged&nbsp;dataset,&nbsp;articles&nbsp;about&nbsp;candidates&nbsp;and&nbsp;sentences&nbsp;about&nbsp;candidates&nbsp;from&nbsp;8&nbsp;scraped&nbsp;sources.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DataPrep-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="DataPrep-article_data"><strong>article_data</strong></a>(self)</dt><dd><tt>Returns&nbsp;articles&nbsp;that&nbsp;mention&nbsp;various&nbsp;U.S.&nbsp;candidates&nbsp;for&nbsp;president&nbsp;in&nbsp;2020.</tt></dd></dl>
+
+<dl><dt><a name="DataPrep-full_data"><strong>full_data</strong></a>(self)</dt><dd><tt>Returns&nbsp;fully&nbsp;merged&nbsp;dataset&nbsp;from&nbsp;articles&nbsp;scraped&nbsp;from&nbsp;8&nbsp;different&nbsp;U.S.&nbsp;media&nbsp;outlets</tt></dd></dl>
+
+<dl><dt><a name="DataPrep-save_article_data"><strong>save_article_data</strong></a>(self)</dt><dd><tt>Saves&nbsp;articles&nbsp;that&nbsp;mention&nbsp;various&nbsp;U.S.&nbsp;candidates&nbsp;for&nbsp;president&nbsp;in&nbsp;2020&nbsp;as&nbsp;a&nbsp;csv.</tt></dd></dl>
+
+<dl><dt><a name="DataPrep-save_sentence_data"><strong>save_sentence_data</strong></a>(self)</dt><dd><tt>Saves&nbsp;sentences&nbsp;that&nbsp;mention&nbsp;various&nbsp;U.S.&nbsp;candidates&nbsp;for&nbsp;president&nbsp;in&nbsp;2020&nbsp;as&nbsp;a&nbsp;csv.</tt></dd></dl>
+
+<dl><dt><a name="DataPrep-sentence_data"><strong>sentence_data</strong></a>(self)</dt><dd><tt>Returns&nbsp;articles&nbsp;that&nbsp;mention&nbsp;various&nbsp;U.S.&nbsp;candidates&nbsp;for&nbsp;president&nbsp;in&nbsp;2020.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="WebScraper">class <strong>WebScraper</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;class&nbsp;used&nbsp;to&nbsp;scrape&nbsp;articles&nbsp;from&nbsp;8&nbsp;different&nbsp;U.S.&nbsp;media&nbsp;outlets&nbsp;and&nbsp;save&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+&nbsp;<br>
+...<br>
+&nbsp;<br>
+Methods<br>
+-------<br>
+<a href="#WebScraper-get_Breitbart">get_Breitbart</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;breitbart.com/politics/&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.<br>
+<a href="#WebScraper-save_Breitbart">save_Breitbart</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appends&nbsp;new&nbsp;Breitbart&nbsp;articles&nbsp;to&nbsp;dataframe&nbsp;of&nbsp;old&nbsp;Breitbart&nbsp;articles&nbsp;and&nbsp;saves&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+<a href="#WebScraper-check_Breitbart">check_Breitbart</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Prints&nbsp;number&nbsp;of&nbsp;new&nbsp;Breitbart&nbsp;articles&nbsp;and&nbsp;number&nbsp;of&nbsp;total&nbsp;Breitbart&nbsp;articles&nbsp;in&nbsp;saved&nbsp;.csv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<a href="#WebScraper-get_FoxNews">get_FoxNews</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;foxnews.com/politics/&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.<br>
+save_FoxNews()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appends&nbsp;new&nbsp;Fox&nbsp;articles&nbsp;to&nbsp;dataframe&nbsp;of&nbsp;old&nbsp;Fox&nbsp;articles&nbsp;and&nbsp;saves&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+check_FoxNews()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Prints&nbsp;number&nbsp;of&nbsp;new&nbsp;Fox&nbsp;articles&nbsp;and&nbsp;number&nbsp;of&nbsp;total&nbsp;Fox&nbsp;articles&nbsp;in&nbsp;saved&nbsp;.csv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<a href="#WebScraper-get_WashingtonTimes">get_WashingtonTimes</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;washingtontimes.com/news/politics/&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.<br>
+<a href="#WebScraper-save_WashingtonTimes">save_WashingtonTimes</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appends&nbsp;new&nbsp;articles&nbsp;to&nbsp;Washington&nbsp;Times&nbsp;dataframe&nbsp;of&nbsp;old&nbsp;Washington&nbsp;Times&nbsp;articles&nbsp;and&nbsp;saves&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+<a href="#WebScraper-check_WashingtonTimes">check_WashingtonTimes</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Prints&nbsp;number&nbsp;of&nbsp;new&nbsp;Washington&nbsp;Times&nbsp;articles&nbsp;and&nbsp;number&nbsp;of&nbsp;total&nbsp;Washington&nbsp;Times&nbsp;articles&nbsp;in&nbsp;saved&nbsp;.csv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<a href="#WebScraper-get_AP">get_AP</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;apnews.com/apf-politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.<br>
+<a href="#WebScraper-save_AP">save_AP</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appends&nbsp;new&nbsp;AP&nbsp;articles&nbsp;to&nbsp;dataframe&nbsp;of&nbsp;old&nbsp;AP&nbsp;articles&nbsp;and&nbsp;saves&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+<a href="#WebScraper-check_AP">check_AP</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Prints&nbsp;number&nbsp;of&nbsp;new&nbsp;AP&nbsp;articles&nbsp;and&nbsp;number&nbsp;of&nbsp;total&nbsp;AP&nbsp;articles&nbsp;in&nbsp;saved&nbsp;.csv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+get_NYT()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;nytimes.com/section/politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.<br>
+<a href="#WebScraper-save_NYT">save_NYT</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appends&nbsp;new&nbsp;NYT&nbsp;articles&nbsp;to&nbsp;dataframe&nbsp;of&nbsp;old&nbsp;NYT&nbsp;articles&nbsp;and&nbsp;saves&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+<a href="#WebScraper-check_NYT">check_NYT</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Prints&nbsp;number&nbsp;of&nbsp;new&nbsp;NYT&nbsp;articles&nbsp;and&nbsp;number&nbsp;of&nbsp;total&nbsp;NYT&nbsp;articles&nbsp;in&nbsp;saved&nbsp;.csv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+get_NBC()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;nbcnews.com/politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.<br>
+<a href="#WebScraper-save_NBC">save_NBC</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appends&nbsp;new&nbsp;articles&nbsp;to&nbsp;dataframe&nbsp;of&nbsp;old&nbsp;articles&nbsp;and&nbsp;saves&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+<a href="#WebScraper-check_NBC">check_NBC</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Prints&nbsp;number&nbsp;of&nbsp;new&nbsp;NBC&nbsp;articles&nbsp;and&nbsp;number&nbsp;of&nbsp;total&nbsp;NBC&nbsp;articles&nbsp;in&nbsp;saved&nbsp;.csv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+get_Politico()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;politico.com/politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.<br>
+<a href="#WebScraper-save_Politico">save_Politico</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appends&nbsp;new&nbsp;Politico&nbsp;articles&nbsp;to&nbsp;dataframe&nbsp;of&nbsp;old&nbsp;Politico&nbsp;articles&nbsp;and&nbsp;saves&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+<a href="#WebScraper-check_Politico">check_Politico</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Prints&nbsp;number&nbsp;of&nbsp;new&nbsp;Politico&nbsp;articles&nbsp;and&nbsp;number&nbsp;of&nbsp;total&nbsp;Politico&nbsp;articles&nbsp;in&nbsp;saved&nbsp;.csv.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<a href="#WebScraper-get_Buzzfeed">get_Buzzfeed</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;buzzfeednews.com/section/politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.<br>
+<a href="#WebScraper-save_Buzzfeed">save_Buzzfeed</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appends&nbsp;new&nbsp;Buzzfeed&nbsp;articles&nbsp;to&nbsp;dataframe&nbsp;of&nbsp;old&nbsp;Buzzfeed&nbsp;articles&nbsp;and&nbsp;saves&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.<br>
+<a href="#WebScraper-check_Buzzfeed">check_Buzzfeed</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Prints&nbsp;number&nbsp;of&nbsp;new&nbsp;Buzzfeed&nbsp;articles&nbsp;and&nbsp;number&nbsp;of&nbsp;total&nbsp;Buzzfeed&nbsp;articles&nbsp;in&nbsp;saved&nbsp;.csv.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="WebScraper-NBC"><strong>NBC</strong></a>()</dt><dd><tt>Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;nbcnews.com/politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-NYT"><strong>NYT</strong></a>()</dt><dd><tt>Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;nytimes.com/section/politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-Politico"><strong>Politico</strong></a>()</dt><dd><tt>Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;politico.com/politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-check_AP"><strong>check_AP</strong></a>()</dt><dd><tt>Prints&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;old&nbsp;AP&nbsp;data&nbsp;and&nbsp;total&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;new&nbsp;AP&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-check_Breitbart"><strong>check_Breitbart</strong></a>()</dt><dd><tt>Prints&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;old&nbsp;Breitbart&nbsp;data&nbsp;and&nbsp;total&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;new&nbsp;Breitbart&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-check_Buzzfeed"><strong>check_Buzzfeed</strong></a>()</dt><dd><tt>Prints&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;old&nbsp;Buzzfeed&nbsp;data&nbsp;and&nbsp;total&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;new&nbsp;Buzzfeed&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-check_Fox"><strong>check_Fox</strong></a>()</dt><dd><tt>Prints&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;old&nbsp;Fox&nbsp;data&nbsp;and&nbsp;total&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;new&nbsp;Fox&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-check_NBC"><strong>check_NBC</strong></a>()</dt><dd><tt>Prints&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;old&nbsp;NBC&nbsp;data&nbsp;and&nbsp;total&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;new&nbsp;NBC&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-check_NYT"><strong>check_NYT</strong></a>()</dt><dd><tt>Prints&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;old&nbsp;NYT&nbsp;data&nbsp;and&nbsp;total&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;new&nbsp;NYT&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-check_Politico"><strong>check_Politico</strong></a>()</dt><dd><tt>Prints&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;old&nbsp;Politico&nbsp;data&nbsp;and&nbsp;total&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;new&nbsp;Politico&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-check_WashingtonTimes"><strong>check_WashingtonTimes</strong></a>()</dt><dd><tt>Returns&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;old&nbsp;Washington&nbsp;Times&nbsp;data&nbsp;and&nbsp;total&nbsp;number&nbsp;of&nbsp;entries&nbsp;in&nbsp;new&nbsp;Washington&nbsp;Times&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-get_AP"><strong>get_AP</strong></a>()</dt><dd><tt>Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;apnews.com/apf-politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-get_Breitbart"><strong>get_Breitbart</strong></a>()</dt><dd><tt>Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;breitbart.com/politics/&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-get_Buzzfeed"><strong>get_Buzzfeed</strong></a>()</dt><dd><tt>Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;buzzfeednews.com/section/politics&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-get_FoxNews"><strong>get_FoxNews</strong></a>()</dt><dd><tt>Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;foxnews.com/politics/&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-get_WashingtonTimes"><strong>get_WashingtonTimes</strong></a>()</dt><dd><tt>Scrapes&nbsp;new&nbsp;articles&nbsp;from&nbsp;washingtontimes.com/news/politics/&nbsp;and&nbsp;returns&nbsp;a&nbsp;dataframe.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-save_AP"><strong>save_AP</strong></a>()</dt><dd><tt>Appends&nbsp;new&nbsp;AP&nbsp;data&nbsp;the&nbsp;the&nbsp;old&nbsp;AP&nbsp;data&nbsp;and&nbsp;saves&nbsp;entire&nbsp;df&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-save_Breitbart"><strong>save_Breitbart</strong></a>()</dt><dd><tt>Appends&nbsp;new&nbsp;Breitbart&nbsp;data&nbsp;the&nbsp;the&nbsp;old&nbsp;Breitbart&nbsp;data&nbsp;and&nbsp;saves&nbsp;entire&nbsp;df&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-save_Buzzfeed"><strong>save_Buzzfeed</strong></a>()</dt><dd><tt>Appends&nbsp;new&nbsp;Buzzfeed&nbsp;data&nbsp;the&nbsp;the&nbsp;old&nbsp;Buzzfeed&nbsp;data&nbsp;and&nbsp;saves&nbsp;entire&nbsp;df&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-save_Fox"><strong>save_Fox</strong></a>()</dt><dd><tt>Appends&nbsp;new&nbsp;Fox&nbsp;data&nbsp;the&nbsp;the&nbsp;old&nbsp;Fox&nbsp;data&nbsp;and&nbsp;saves&nbsp;entire&nbsp;df&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-save_NBC"><strong>save_NBC</strong></a>()</dt><dd><tt>Appends&nbsp;new&nbsp;NBC&nbsp;data&nbsp;the&nbsp;the&nbsp;old&nbsp;NBC&nbsp;data&nbsp;and&nbsp;saves&nbsp;entire&nbsp;df&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-save_NYT"><strong>save_NYT</strong></a>()</dt><dd><tt>Appends&nbsp;new&nbsp;NYT&nbsp;data&nbsp;the&nbsp;the&nbsp;old&nbsp;NYT&nbsp;data&nbsp;and&nbsp;saves&nbsp;entire&nbsp;df&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-save_Politico"><strong>save_Politico</strong></a>()</dt><dd><tt>Appends&nbsp;new&nbsp;Politico&nbsp;data&nbsp;the&nbsp;the&nbsp;old&nbsp;Politico&nbsp;data&nbsp;and&nbsp;saves&nbsp;entire&nbsp;df&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="WebScraper-save_WashingtonTimes"><strong>save_WashingtonTimes</strong></a>()</dt><dd><tt>Appends&nbsp;new&nbsp;Washington&nbsp;Times&nbsp;data&nbsp;the&nbsp;the&nbsp;old&nbsp;Washington&nbsp;Times&nbsp;data&nbsp;and&nbsp;saves&nbsp;entire&nbsp;df&nbsp;as&nbsp;a&nbsp;.csv&nbsp;file.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
