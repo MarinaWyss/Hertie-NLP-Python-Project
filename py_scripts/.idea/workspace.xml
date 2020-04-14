@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fcb14a2-be1a-4f43-855c-c5a606e2d20b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/1_Web_Scraper_Tool-Copy1-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/1_Web_Scraper_Tool-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/1_Web_Scraper_Tool-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/2_Data_Prep-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/2_Data_Prep-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/4_Sentiment Analysis-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/4_Sentiment Analysis-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/1_Web_Scraper_Tool-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../1_Web_Scraper_Tool.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../2_Data_Prep.ipynb" afterPath="$PROJECT_DIR$/../2_Data_Prep.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../3_Descriptives.ipynb" afterPath="$PROJECT_DIR$/../3_Descriptives.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../4_Sentiment_Analysis.ipynb" afterPath="$PROJECT_DIR$/../4_Sentiment_Analysis.ipynb" />
       <change beforePath="$PROJECT_DIR$/../data/ap_data.csv" afterPath="$PROJECT_DIR$/../data/ap_data.csv" />
+      <change beforePath="$PROJECT_DIR$/../data/article_data.csv" afterPath="$PROJECT_DIR$/../data/article_data.csv" />
       <change beforePath="$PROJECT_DIR$/../data/breitbart_data.csv" afterPath="$PROJECT_DIR$/../data/breitbart_data.csv" />
       <change beforePath="$PROJECT_DIR$/../data/buzzfeed_data.csv" afterPath="$PROJECT_DIR$/../data/buzzfeed_data.csv" />
       <change beforePath="$PROJECT_DIR$/../data/fox_data.csv" afterPath="$PROJECT_DIR$/../data/fox_data.csv" />
@@ -15,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/../data/politico_data.csv" afterPath="$PROJECT_DIR$/../data/politico_data.csv" />
       <change beforePath="$PROJECT_DIR$/../data/wt_data.csv" afterPath="$PROJECT_DIR$/../data/wt_data.csv" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/2_BERT.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../scrape_log.txt" afterPath="$PROJECT_DIR$/../scrape_log.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,31 +29,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1_Web_Scraper_Tool.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
+      <file leaf-file-name="Descriptives.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Descriptives.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="677" column="2" lean-forward="true" selection-start-line="670" selection-start-column="0" selection-end-line="677" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="15" column="99" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="99" />
               <folding>
-                <element signature="e#79#94#0" expanded="true" />
+                <element signature="e#17#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2_BERT.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2_BERT.py">
+      <file leaf-file-name="Sentiment_Analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sentiment_Analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="2632">
+              <caret line="213" column="16" lean-forward="true" selection-start-line="213" selection-start-column="16" selection-end-line="213" selection-end-column="16" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#17#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_Sentiment_Analysis.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/test_Sentiment_Analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <element signature="e#17#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -59,6 +81,7 @@
       <find>get article titles, content</find>
       <find>nbc</find>
       <find>get_text</find>
+      <find>plot</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,13 +93,24 @@
         <option value="$PROJECT_DIR$/../../../../1_Web_Scraper_Tool.py" />
         <option value="$PROJECT_DIR$/2_BERT.py" />
         <option value="$PROJECT_DIR$/1_Web_Scraper_Tool.py" />
+        <option value="$PROJECT_DIR$/Web_Scraper_Tool.py" />
+        <option value="$PROJECT_DIR$/tests/Test_Web_Scraper_Classes.py" />
+        <option value="$PROJECT_DIR$/tests/__init__.py" />
+        <option value="$PROJECT_DIR$/Data_Prep.py" />
+        <option value="$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py" />
+        <option value="$PROJECT_DIR$/tests/test_Data_Prep.py" />
+        <option value="$PROJECT_DIR$/Descriptives.py" />
+        <option value="$PROJECT_DIR$/test_Descriptives.py" />
+        <option value="$PROJECT_DIR$/tests/test_Descriptives.py" />
+        <option value="$PROJECT_DIR$/Sentiment_Analysis.py" />
+        <option value="$PROJECT_DIR$/tests/test_Sentiment_Analysis.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
-    <option name="y" value="44" />
-    <option name="width" value="1315" />
+    <option name="x" value="66" />
+    <option name="y" value="29" />
+    <option name="width" value="1346" />
     <option name="height" value="755" />
   </component>
   <component name="ProjectView">
@@ -94,14 +128,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="py_scripts" type="b2602c69:ProjectViewProjectNode" />
               <item name="py_scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_scripts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="py_scripts" type="b2602c69:ProjectViewProjectNode" />
@@ -155,10 +194,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="44" width="1315" height="755" extended-state="0" />
+    <frame x="66" y="29" width="1346" height="755" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22874807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22339623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35454544" sideWeight="0.5030912" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -187,61 +226,116 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="90" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2_BERT.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_Web_Scraper_Classes.py" />
+    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_Web_Scraper_Classes.py" />
+    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Web_Scraper_Tool.py" />
     <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2_BERT.py">
+    <entry file="file://$PROJECT_DIR$/Web_Scraper_Tool.py" />
+    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2_BERT.py" />
+    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_BERT.py" />
+    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_BERT.py" />
+    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_BERT.py" />
     <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9420">
           <caret line="628" column="12" lean-forward="false" selection-start-line="628" selection-start-column="12" selection-end-line="628" selection-end-column="12" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2_BERT.py">
+    <entry file="file://$PROJECT_DIR$/2_BERT.py" />
+    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_BERT.py" />
+    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -249,19 +343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2_BERT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -269,9 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -279,9 +357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -289,9 +364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -299,9 +371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -309,9 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -319,9 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -329,9 +392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -339,9 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -349,50 +406,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../1_Web_Scraper_Tool.py" />
     <entry file="file://$PROJECT_DIR$/../../../../1_Web_Scraper_Tool.py" />
-    <entry file="file://$PROJECT_DIR$/2_BERT.py">
+    <entry file="file://$PROJECT_DIR$/2_BERT.py" />
+    <entry file="file://$PROJECT_DIR$/Web_Scraper_Tool.py" />
+    <entry file="file://$PROJECT_DIR$/tests/Web_Scraper_Tool.py" />
+    <entry file="file://$PROJECT_DIR$/test_Web_Scraper_Classes.py" />
+    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1_Web_Scraper_Tool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="677" column="2" lean-forward="true" selection-start-line="670" selection-start-column="0" selection-end-line="677" selection-end-column="2" />
+        <state relative-caret-position="105">
+          <caret line="12" column="90" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Prep.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_Descriptives.py" />
+    <entry file="file://$PROJECT_DIR$/tests/test_Data_Prep.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_Descriptives.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Descriptives.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="99" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="99" />
           <folding>
-            <element signature="e#79#94#0" expanded="true" />
+            <element signature="e#17#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiment_Analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2632">
+          <caret line="213" column="16" lean-forward="true" selection-start-line="213" selection-start-column="16" selection-end-line="213" selection-end-column="16" />
+          <folding>
+            <element signature="e#17#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_Sentiment_Analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#17#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
