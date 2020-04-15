@@ -6730,3 +6730,32 @@ difference: 3
 number of entries in old buzzfeed data: 192
 total number of entries in new buzzfeed data: 192
 difference: 0
+15/04/2020 07:00:02
+number of entries in old breitbart data: 2234
+total number of entries in new breitbart data: 2264
+difference: 30
+15/04/2020 10:00:01
+number of entries in old breitbart data: 2264
+total number of entries in new breitbart data: 2269
+difference: 5
+number of entries in old fox data: 1422
+total number of entries in new fox data: 1442
+difference: 20
+number of entries in old wt data: 1269
+total number of entries in new wt data: 1292
+difference: 23
+number of entries in old ap data: 1058
+total number of entries in new ap data: 1075
+difference: 17
+number of entries in old nbc data: 1464
+total number of entries in new nbc data: 1478
+difference: 14
+number of entries in old nyt data: 293
+total number of entries in new nyt data: 296
+difference: 3
+number of entries in old politico data: 1761
+total number of entries in new politico data: 1791
+difference: 30
+number of entries in old buzzfeed data: 192
+total number of entries in new buzzfeed data: 196
+difference: 4
