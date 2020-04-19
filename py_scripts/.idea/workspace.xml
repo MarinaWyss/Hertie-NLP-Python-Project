@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fcb14a2-be1a-4f43-855c-c5a606e2d20b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/test_BERT.py" />
       <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/1_Web_Scraper_Tool-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/2_Data_Prep-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/2_Data_Prep-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/3_Descriptives-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/3_Descriptives-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/BERT-checkpoint.ipynb" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../5_BERT.ipynb" afterPath="$PROJECT_DIR$/../5_BERT.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../6_MLP.ipynb" afterPath="$PROJECT_DIR$/../6_MLP.ipynb" />
       <change beforePath="$PROJECT_DIR$/../data/ap_data.csv" afterPath="$PROJECT_DIR$/../data/ap_data.csv" />
       <change beforePath="$PROJECT_DIR$/../data/breitbart_data.csv" afterPath="$PROJECT_DIR$/../data/breitbart_data.csv" />
       <change beforePath="$PROJECT_DIR$/../data/fox_data.csv" afterPath="$PROJECT_DIR$/../data/fox_data.csv" />
@@ -12,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/../data/politico_data.csv" afterPath="$PROJECT_DIR$/../data/politico_data.csv" />
       <change beforePath="$PROJECT_DIR$/../data/wt_data.csv" afterPath="$PROJECT_DIR$/../data/wt_data.csv" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/BERT.py" afterPath="$PROJECT_DIR$/BERT.py" />
       <change beforePath="$PROJECT_DIR$/../scrape_log.txt" afterPath="$PROJECT_DIR$/../scrape_log.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BERT.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BERT.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BERT.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-236">
-              <caret line="141" column="50" lean-forward="false" selection-start-line="141" selection-start-column="50" selection-end-line="141" selection-end-column="50" />
+            <state relative-caret-position="109">
+              <caret line="163" column="6" lean-forward="false" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
               <folding>
                 <element signature="e#17#36#0" expanded="true" />
               </folding>
@@ -35,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_BERT.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_BERT.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_BERT.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="495">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#17#36#0" expanded="true" />
               </folding>
@@ -86,8 +90,9 @@
         <option value="$PROJECT_DIR$/tests/test_Descriptives.py" />
         <option value="$PROJECT_DIR$/Sentiment_Analysis.py" />
         <option value="$PROJECT_DIR$/tests/test_Sentiment_Analysis.py" />
-        <option value="$PROJECT_DIR$/BERT.py" />
         <option value="$PROJECT_DIR$/tests/test_BERT.py" />
+        <option value="$PROJECT_DIR$/dash/app.py" />
+        <option value="$PROJECT_DIR$/BERT.py" />
       </list>
     </option>
   </component>
@@ -113,6 +118,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,7 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,13 +218,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -437,7 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -445,7 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -453,24 +449,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="14" column="85" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BERT.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_BERT.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="141" column="50" lean-forward="false" selection-start-line="141" selection-start-column="50" selection-end-line="141" selection-end-column="50" />
+        <state relative-caret-position="495">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="e#17#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_BERT.py">
+    <entry file="file://$PROJECT_DIR$/dash/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BERT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="163" column="6" lean-forward="false" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
           <folding>
             <element signature="e#17#36#0" expanded="true" />
           </folding>
