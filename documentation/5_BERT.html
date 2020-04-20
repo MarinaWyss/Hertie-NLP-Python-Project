@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module 5_BERT</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>5_BERT</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/madelinebrady/Documents/GitHub/Hertie-NLP-Python-Project/documentation/py_scripts/5_BERT.py">/Users/madelinebrady/Documents/GitHub/Hertie-NLP-Python-Project/documentation/py_scripts/5_BERT.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;coding:&nbsp;utf-8</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="nltk.html">nltk</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="torch.html">torch</a><br>
+<a href="transformers.html">transformers</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="5_BERT.html#BERT">BERT</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="BERT">class <strong>BERT</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Reads&nbsp;in&nbsp;sentence-level&nbsp;data.&nbsp;<br>
+Filters&nbsp;for&nbsp;sentences&nbsp;related&nbsp;to&nbsp;Biden&nbsp;or&nbsp;Sanders.&nbsp;<br>
+Removes&nbsp;the&nbsp;candidate&nbsp;names&nbsp;from&nbsp;the&nbsp;text&nbsp;and&nbsp;moves&nbsp;them&nbsp;to&nbsp;a&nbsp;new&nbsp;label&nbsp;column.<br>
+Applies&nbsp;<a href="#BERT">BERT</a>&nbsp;embeddings&nbsp;<br>
+return:&nbsp;<a href="#BERT">BERT</a>&nbsp;embedded&nbsp;train,&nbsp;test,&nbsp;and&nbsp;val&nbsp;datasets,&nbsp;as&nbsp;train,&nbsp;test,&nbsp;and&nbsp;val&nbsp;labels<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="BERT-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="BERT-bert_model"><strong>bert_model</strong></a>(self)</dt><dd><tt>Creates&nbsp;the&nbsp;<a href="#BERT">BERT</a>&nbsp;model&nbsp;to&nbsp;apply&nbsp;<a href="#BERT">BERT</a>&nbsp;embeddings.<br>
+return:&nbsp;<a href="#BERT">BERT</a>&nbsp;embedding&nbsp;datasets</tt></dd></dl>
+
+<dl><dt><a name="BERT-data"><strong>data</strong></a>(self)</dt><dd><tt>Removes&nbsp;candidate&nbsp;names&nbsp;from&nbsp;the&nbsp;text&nbsp;and&nbsp;uses&nbsp;names&nbsp;to&nbsp;create&nbsp;a&nbsp;label&nbsp;column.<br>
+Filters&nbsp;for&nbsp;Sanders&nbsp;and&nbsp;Biden.<br>
+return:&nbsp;pd.DataFrame</tt></dd></dl>
+
+<dl><dt><a name="BERT-prepped_data"><strong>prepped_data</strong></a>(self)</dt><dd><tt>Prepares&nbsp;the&nbsp;article&nbsp;text&nbsp;for&nbsp;the&nbsp;<a href="#BERT">BERT</a>&nbsp;embeddings<br>
+return:&nbsp;pd.DataFrame</tt></dd></dl>
+
+<dl><dt><a name="BERT-train_test_split"><strong>train_test_split</strong></a>(self)</dt><dd><tt>Selects&nbsp;a&nbsp;random&nbsp;sample&nbsp;of&nbsp;the&nbsp;prepped&nbsp;data&nbsp;for&nbsp;the&nbsp;train,&nbsp;val,&nbsp;and&nbsp;test&nbsp;datasets<br>
+return:&nbsp;pd.DataFrame</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>stopwords</strong> = &lt;WordListCorpusReader in '.../corpora/stopwords' (not loaded yet)&gt;</td></tr></table>
+</body></html>
