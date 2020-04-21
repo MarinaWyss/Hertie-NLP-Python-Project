@@ -10,7 +10,7 @@ def test_total_candidate_mentions():
     # assertions
     assert isinstance(res, pd.DataFrame)
     assert res.shape == (10, 2)
-    assert set(res['candidates']) == {'Warren', 'Trump', 'Gabbard', 'Biden', 'Yang', 'Steyer',
+    assert set(res['candidate']) == {'Warren', 'Trump', 'Gabbard', 'Biden', 'Yang', 'Steyer',
                                       'Klobuchar', 'Sanders', 'Buttigieg', 'Bloomberg'}
     assert all(res['count'] >= 90)
 

@@ -12,7 +12,7 @@ def test_data():
 
     # assertions
     assert isinstance(res, pd.DataFrame)
-    assert set(res.columns) == {'article_text', 'lable'}
+    assert set(res.columns) == {'article_text', 'label'}
     assert res.shape[0] > 1
     names = ['Biden', 'Sanders', 'Bernie', 'Bernard', 'Joe', 'Senator', 'Vice President']
     assert not res['article_text'].str.contains('|'.join(names)).any()
@@ -23,7 +23,7 @@ def test_prepped_data():
 
     # assertions
     assert isinstance(res, pd.DataFrame)
-    assert set(res.columns) == {'article_text', 'lable'}
+    assert set(res.columns) == {'article_text', 'label'}
     assert res.shape[0] > 1
     assert not any(p in res['article_text'] for p in punctuation)
 
@@ -33,7 +33,7 @@ def test_train_test_split():
 
     # assertions
     assert res_train.shape == (70, 2)
-    assert res_val.shape == (70, 2)
+    assert res_val.shape == (20, 2)
     assert res_test.shape == (10, 2)
 
 def test_bert_model():

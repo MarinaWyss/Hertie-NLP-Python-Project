@@ -41,6 +41,7 @@ class DataPrep:
         wt['date'] = [x.replace(' -\n\t\t\t\n\t\t\t\tAssociated Press\n -    Updated:', '') for x in wt['date']]
         wt['date'] = [x.replace(' -\n\t\t\t\n\t\t\t\tThe Washington Times\n -    Updated:', '') for x in wt['date']]
         wt['date'] = [parse(x) for x in wt['date']]
+        ap['date'] = ap['date'].to_string()
         ap['date'] = [x.split('T')[0] for x in ap['date']]
         nbc = nbc.copy().dropna()
         nbc['date'] = [parse(x) for x in nbc['date']]
