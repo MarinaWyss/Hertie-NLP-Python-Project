@@ -5,18 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/1_Web_Scraper_Tool-checkpoint.ipynb" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/2_Data_Prep-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/2_Data_Prep-checkpoint.ipynb" />
       <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/3_Descriptives-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/3_Descriptives-checkpoint.ipynb" />
-      <change beforePath="$PROJECT_DIR$/../data/ap_data.csv" afterPath="$PROJECT_DIR$/../data/ap_data.csv" />
-      <change beforePath="$PROJECT_DIR$/../data/breitbart_data.csv" afterPath="$PROJECT_DIR$/../data/breitbart_data.csv" />
-      <change beforePath="$PROJECT_DIR$/../data/buzzfeed_data.csv" afterPath="$PROJECT_DIR$/../data/buzzfeed_data.csv" />
-      <change beforePath="$PROJECT_DIR$/../data/fox_data.csv" afterPath="$PROJECT_DIR$/../data/fox_data.csv" />
-      <change beforePath="$PROJECT_DIR$/../data/nbc_data.csv" afterPath="$PROJECT_DIR$/../data/nbc_data.csv" />
-      <change beforePath="$PROJECT_DIR$/../data/nyt_data.csv" afterPath="$PROJECT_DIR$/../data/nyt_data.csv" />
-      <change beforePath="$PROJECT_DIR$/../data/politico_data.csv" afterPath="$PROJECT_DIR$/../data/politico_data.csv" />
-      <change beforePath="$PROJECT_DIR$/../data/wt_data.csv" afterPath="$PROJECT_DIR$/../data/wt_data.csv" />
-      <change beforePath="$PROJECT_DIR$/Data_Prep.py" afterPath="$PROJECT_DIR$/Data_Prep.py" />
-      <change beforePath="$PROJECT_DIR$/tests/test_BERT.py" afterPath="$PROJECT_DIR$/tests/test_BERT.py" />
-      <change beforePath="$PROJECT_DIR$/tests/test_Descriptives.py" afterPath="$PROJECT_DIR$/tests/test_Descriptives.py" />
-      <change beforePath="$PROJECT_DIR$/../scrape_log.txt" afterPath="$PROJECT_DIR$/../scrape_log.txt" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py" afterPath="$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,21 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_Sentiment_Analysis.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_Sentiment_Analysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_Sentiment_Analysis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
               <caret line="59" column="73" lean-forward="true" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_Web_Scraper_Classes.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -90,7 +69,6 @@
         <option value="$PROJECT_DIR$/Web_Scraper_Tool.py" />
         <option value="$PROJECT_DIR$/tests/Test_Web_Scraper_Classes.py" />
         <option value="$PROJECT_DIR$/tests/__init__.py" />
-        <option value="$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py" />
         <option value="$PROJECT_DIR$/Descriptives.py" />
         <option value="$PROJECT_DIR$/test_Descriptives.py" />
         <option value="$PROJECT_DIR$/Sentiment_Analysis.py" />
@@ -105,6 +83,7 @@
         <option value="$PROJECT_DIR$/Data_Prep.py" />
         <option value="$PROJECT_DIR$/tests/test_Data_Prep.py" />
         <option value="$PROJECT_DIR$/tests/test_Descriptives.py" />
+        <option value="$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py" />
       </list>
     </option>
   </component>
@@ -208,9 +187,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35454544" sideWeight="0.5030912" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35454544" sideWeight="0.4969088" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35454544" sideWeight="0.4969088" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3242424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3242424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -474,18 +453,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_Sentiment_Analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="59" column="73" lean-forward="true" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_Web_Scraper_Classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -31,7 +31,7 @@ def test_scrape_wt():
     # assertions
     assert isinstance(res, pd.DataFrame)
     assert set(res.columns) == {'publisher', 'date', 'link', 'article_title', 'article_text'}
-    assert all(res.publisher == "Washington Times")
+    assert all(res.publisher == "washington_times")
     assert res.shape[0] >= 25
 
 def test_scrape_ap():
@@ -56,7 +56,7 @@ def test_scrape_nbc():
 
 def test_scrape_nyt():
     # instantiate
-    res = WebScraper.scrape_nbc()
+    res = WebScraper.scrape_nyt()
 
     # assertions
     assert isinstance(res, pd.DataFrame)
