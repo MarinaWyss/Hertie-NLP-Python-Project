@@ -8,7 +8,6 @@ import pandas as pd
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output
 
 import plotly.graph_objs as go
 
@@ -21,90 +20,88 @@ mentions_day_publisher = DashData().mentions_day_publisher()
 sentiment_per_day = DashData().sentiment_per_day()
 sentiment_day_publisher = DashData().sentiment_day_publisher()
 
+# layout colors
+colors = {
+    'text': '#ffffff',
+    'background_color': '#696969'
+}
+
 # initialize app
 app = dash.Dash()
 
-# dashboard layout
-app.layout = html.Div(
-    children=[
-        html.Div(
-            className="row",
-            children=[
-                # column for user controls
-                html.Div(
-                    className="four columns div-user-controls",
-                    children=[
-                        html.H2("MONITORING MEDIA COVERAGE OF THE PRESIDENTIAL PRIMARY"),
-                        html.P(
-                            """Select different days using the date picker."""
-                        ),
-                        html.Div(
-                            className="div-for-dropdown",
-                            children=[
-                                dcc.DatePickerSingle(
-                                    id="date-picker",
-                                    min_date_allowed=dt(2020, 3, 1),
-                                    max_date_allowed=dt(2020, 4, 15),
-                                    initial_visible_month=dt(2020, 3, 1),
-                                    date=dt(2020, 3, 1).date(),
-                                    display_format="MMMM D, YYYY",
-                                    style={"border": "0px solid black"},
-                                )
-                            ],
-                        ),
-                        # Change to side-by-side for mobile layout
-                        html.Div(
-                            className="row",
-                            children=[
-                                html.Div(
-                                    className="div-for-dropdown",
-                                    children=[
-                                        # Dropdown for locations on map
-                                        dcc.Dropdown(
-                                            id="publisher-dropdown",
-                                            options=[
-                                                {"label": i, "value": i}
-                                                for i in mentions_day_publisher['publisher'].unique()
-                                            ],
-                                            placeholder="Select a publisher",
-                                        )
-                                    ],
-                                ),
-                            ],
-                        ),
-                        html.P(id="total-rides"),
-                        html.P(id="total-rides-selection"),
-                        html.P(id="date-value"),
-                        dcc.Markdown(
-                            children=[
-                                "Sources: New York Times, Breitbart, AP, Washington Times, Buzzfeed, Politico, NBC & Fox"
-                            ]
-                        ),
-                    ],
-                ),
-                # Column for app graphs and plots
-                html.Div(
-                    className="eight columns div-for-charts bg-grey",
-                    children=[
-                        dcc.Graph(id="coverage")
-                    ],
-                ),
+# layout
+app.layout = html.Div([
+    html.Label('Select a publisher'),
+
+    dcc.Dropdown(
+        id = 'publisher_choice',
+        options = [
+            {'label': i, 'value': i}
+            for i in mentions_day_publisher['publisher'].unique()],
+        placeholder = 'Select a publisher'
+            ),
+
+    dcc.Checklist(
+        id = 'candidate_choice',
+        options = [
+            {'label': i, 'value': i}
+            for i in mentions_day_publisher['candidate'].unique()],
+        value = mentions_day_publisher['candidate'].unique()
+            ),
+
+    dcc.DatePickerRange(
+        id = 'date_range',
+        start_date = dt(2020, 3, 1),
+        end_date_placeholder_text = 'Select the end date'
+            ),
+
+    html.H1(children =
+            'MONITORING MEDIA COVERAGE OF THE PRESIDENTIAL PRIMARY',
+            style = {
+                'textAlign': 'center',
+                'color': colors['text']
+            }),
+
+    html.Div(children =
+             'Data from Breitbart, NBC, Fox News, the New York Times, AP, the Washington Times, Politico, and Buzzfeed',
+             style={
+                 'textAlign': 'center',
+                 'color': colors['text']
+             }),
+
+    dcc.Graph(
+        id = 'total_mentions_by_publisher',
+        figure = {
+            'data': [{
+                'x': mentions_day_publisher['candidate'],
+                'y': mentions_day_publisher['count'],
+                'type': 'bar',
+                'name': 'Chart 1'}
             ],
-        )
-    ]
-)
+            'layout': {
+                'title': 'Total Candidate Mentions (by Publisher)',
+                'plot_bgcolor': colors['background_color'],
+                'paper_bgcolor': colors['background_color'],
+                'font': {
+                    'color': colors['text']}
+            }}),
 
+    dcc.Graph(
+        id = 'mentions_per_day',
+        figure = {
+            'data': [
+                go.Scatter(
+                    x = mentions_per_day['date'],
+                    y = mentions_per_day['count'],
+                    showlegend = True,
+                    mode = 'lines',
+                    name = i)
+                    for i in mentions_per_day['candidates'].unique()],
+            'layout': go.Layout(
+                title = 'Candidate Mentions Over Time',
+                yaxis = {'title': 'Count'})
+                })
 
-def generate_coverage_plot(publisher):
-    filtered_df = mentions_day_publisher[(mentions_day_publisher["Publisher"] == publisher)]
+])
 
-    figure = go.Figure(
-        data=[
-            go.Bar(x=filtered_df["candidate"], y=filtered_df["count"])
-        ],
-        layout=go.Layout(
-            title='Mentions Per Candidate',
-            showlegend=True
-        )
-    )
-
+app.run_server()
