@@ -2,23 +2,23 @@ import sys
 path = '/Users/marinabennett/Desktop/Hertie/1._Spring_2020/Hertie-NLP-Python-Project/py_scripts/dashBoard'
 sys.path.append(path)
 
-from datetime import datetime as dt
 import pandas as pd
 
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+from dash.dependencies import Input, Output
+import dash_bootstrap_components as dbc
+# https://dash-bootstrap-components.opensource.faculty.ai/docs/components/layout/
 
-import plotly.graph_objs as go
+import plotly.express as px
 
 from dashDataPrep import DashData
 
 
 # initialize data
-mentions_per_day = DashData().mentions_per_day()
 mentions_day_publisher = DashData().mentions_day_publisher()
-sentiment_per_day = DashData().sentiment_per_day()
-sentiment_day_publisher = DashData().sentiment_day_publisher()
+# sentiment_day_publisher = DashData().sentiment_day_publisher()
 
 # layout colors
 colors = {
@@ -31,14 +31,13 @@ app = dash.Dash()
 
 # layout
 app.layout = html.Div([
-    html.Label('Select a publisher'),
 
     dcc.Dropdown(
         id = 'publisher_choice',
         options = [
             {'label': i, 'value': i}
             for i in mentions_day_publisher['publisher'].unique()],
-        placeholder = 'Select a publisher'
+        value = 'AP'
             ),
 
     dcc.Checklist(
@@ -51,8 +50,10 @@ app.layout = html.Div([
 
     dcc.DatePickerRange(
         id = 'date_range',
-        start_date = dt(2020, 3, 1),
-        end_date_placeholder_text = 'Select the end date'
+        min_date_allowed=mentions_day_publisher['date'].iloc[0],
+        max_date_allowed=mentions_day_publisher['date'].iloc[-1],
+        start_date=mentions_day_publisher['date'].iloc[0],
+        end_date=mentions_day_publisher['date'].iloc[-1]
             ),
 
     html.H1(children =
@@ -69,39 +70,72 @@ app.layout = html.Div([
                  'color': colors['text']
              }),
 
-    dcc.Graph(
-        id = 'total_mentions_by_publisher',
-        figure = {
-            'data': [{
-                'x': mentions_day_publisher['candidate'],
-                'y': mentions_day_publisher['count'],
-                'type': 'bar',
-                'name': 'Chart 1'}
-            ],
-            'layout': {
-                'title': 'Total Candidate Mentions (by Publisher)',
-                'plot_bgcolor': colors['background_color'],
-                'paper_bgcolor': colors['background_color'],
-                'font': {
-                    'color': colors['text']}
-            }}),
+    html.Div(id='mentions_pub'),
 
-    dcc.Graph(
-        id = 'mentions_per_day',
-        figure = {
-            'data': [
-                go.Scatter(
-                    x = mentions_per_day['date'],
-                    y = mentions_per_day['count'],
-                    showlegend = True,
-                    mode = 'lines',
-                    name = i)
-                    for i in mentions_per_day['candidates'].unique()],
-            'layout': go.Layout(
-                title = 'Candidate Mentions Over Time',
-                yaxis = {'title': 'Count'})
-                })
+    html.Div(id='mentions_day')
 
 ])
+
+@app.callback(
+    Output(component_id='mentions_pub', component_property='children'),
+    [Input(component_id='publisher_choice', component_property='value'),
+     Input(component_id='candidate_choice', component_property='value'),
+     Input(component_id='date_range', component_property='start_date'),
+     Input(component_id='date_range', component_property='end_date')]
+)
+
+@app.callback(
+    Output(component_id='mentions_day', component_property='children'),
+    [Input(component_id='publisher_choice', component_property='value'),
+     Input(component_id='candidate_choice', component_property='value'),
+     Input(component_id='date_range', component_property='start_date'),
+     Input(component_id='date_range', component_property='end_date')]
+)
+
+def update_mentions_pub(publisher_choice, candidate_choice, start_date, end_date):
+
+    start = pd.to_datetime(start_date)
+    end = pd.to_datetime(end_date)
+
+    mentions_day_publisher = DashData().mentions_day_publisher()
+
+    mask = (start <= mentions_day_publisher['date']) & \
+           (mentions_day_publisher['date'] <= end) & \
+           (mentions_day_publisher['publisher'] == publisher_choice) & \
+           (mentions_day_publisher['candidate'].isin(candidate_choice))
+    dat_fig_mentions_pub = mentions_day_publisher.loc[mask]
+    dat_fig_mentions_pub = dat_fig_mentions_pub.groupby('candidate').sum().reset_index()
+
+    fig_mentions_pub = px.bar(dat_fig_mentions_pub,
+                              x='candidate',
+                              y='count',
+                              title='Total Mentions By Outlet')
+
+    return dcc.Graph(id ='total_mentions_by_publisher', figure = fig_mentions_pub)
+
+
+def update_mentions_day(publisher_choice, candidate_choice, start_date, end_date):
+
+    start = pd.to_datetime(start_date)
+    end = pd.to_datetime(end_date)
+
+    mentions_day_publisher = DashData().mentions_day_publisher()
+
+    mask = (start <= mentions_day_publisher['date']) & \
+           (mentions_day_publisher['date'] <= end) & \
+           (mentions_day_publisher['publisher'] == publisher_choice) & \
+           (mentions_day_publisher['candidate'].isin(candidate_choice))
+    dat_fig_mentions_day = mentions_day_publisher.loc[mask]
+    dat_fig_mentions_day = dat_fig_mentions_day.groupby(['candidate', 'date']).sum().reset_index()
+
+    fig_mentions_day = px.line(dat_fig_mentions_day,
+                               x="date",
+                               y="count",
+                               color="candidate",
+                               line_group="candidate",
+                               hover_name="candidate")
+
+    return dcc.Graph(id ='total_mentions_per_day', figure = fig_mentions_day)
+
 
 app.run_server()

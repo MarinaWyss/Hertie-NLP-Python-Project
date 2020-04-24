@@ -29,23 +29,6 @@ class DashData:
 
         return sentence_data
 
-    def mentions_per_day(self):
-
-        sentence_data = self.sentence_data()
-
-        time_data = sentence_data.loc[:, ['date', 'Trump', 'Sanders', 'Biden', 'Warren', 'Buttigieg',
-                                          'Bloomberg', 'Klobuchar', 'Yang', 'Steyer', 'Gabbard']]
-
-        sum_cand_day = time_data.groupby(['date']).sum()
-        sum_cand_day.reset_index(inplace=True)
-
-        mentions_over_time = pd.melt(sum_cand_day,
-                                     id_vars=['date'],
-                                     var_name='candidates',
-                                     value_name='count')
-
-        return mentions_over_time
-
     def mentions_day_publisher(self):
 
         sentence_data = self.sentence_data()
@@ -99,15 +82,6 @@ class DashData:
                                                     'sanders', sentiment_data['candidate'])
 
         return sentiment_data
-
-    def sentiment_per_day(self):
-        cand_sentiment = self.sentiment_data()
-        cand_sentiment = cand_sentiment[['date', 'sentiment', 'candidate']]
-
-        sentiment_per_day = cand_sentiment.groupby(['date', 'candidate']).mean()
-        sentiment_per_day.reset_index(inplace=True)
-
-        return sentiment_per_day
 
     def sentiment_day_publisher(self):
         cand_sentiment = self.sentiment_data()
